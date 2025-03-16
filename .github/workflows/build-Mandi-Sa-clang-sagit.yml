@@ -139,7 +139,7 @@ jobs:
         rm -rf AnyKernel3/ramdisk AnyKernel3/modules AnyKernel3/patch
 
     - name: 打包并上传
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: ${{ env.KERNEL_ZIP_NAME }}
         path: kernel_workspace/AnyKernel3/*
